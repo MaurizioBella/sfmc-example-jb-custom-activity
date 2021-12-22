@@ -31,17 +31,20 @@ module.exports = function configJSON(req) {
     },
     configurationArguments: {
       save: {
-        url: `https://${req.headers.host}/modules/discount-redemption-split/save`
+        url: `https://${req.headers.host}/modules/discount-redemption-split/save`,
+        useJwt: true
       },
       publish: {
         url: `https://${req.headers.host}/modules/discount-redemption-split/publish`,
         useJwt: true
       },
       validate: {
-        url: `https://${req.headers.host}/modules/discount-redemption-split/validate`
+        url: `https://${req.headers.host}/modules/discount-redemption-split/validate`,
+        useJwt: true
       },
       stop: {
-        url: `https://${req.headers.host}/modules/discount-redemption-split/stop`
+        url: `https://${req.headers.host}/modules/discount-redemption-split/stop`,
+        useJwt: true
       }
     },
     userInterfaces: {

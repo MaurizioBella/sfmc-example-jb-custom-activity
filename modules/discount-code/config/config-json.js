@@ -45,10 +45,12 @@ module.exports = function configJSON(req) {
         useJwt: true
       },
       validate: {
-        url: `https://${req.headers.host}/modules/discount-code/validate`
+        url: `https://${req.headers.host}/modules/discount-code/validate`,
+        useJwt: true
       },
       stop: {
-        url: `https://${req.headers.host}/modules/discount-code/stop`
+        url: `https://${req.headers.host}/modules/discount-code/stop`,
+        useJwt: true
       }
     },
     userInterfaces: {

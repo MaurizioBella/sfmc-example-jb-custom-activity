@@ -1,3 +1,8 @@
+# INTRO
+- Marketing Cloud Custom Activity deployed on Heroku
+- Crea an Installed Package on Marketing Cloud adding a Component "Journey Builder Activity" with Endpoint URL: https://appname.herokuapp.com/modules/discount-code
+
+
 # Salesforce Journey Builder - Custom Activity Examples
 
 This repository contains a number of custom activity examples for Salesforce Journey Builder. These examples are 

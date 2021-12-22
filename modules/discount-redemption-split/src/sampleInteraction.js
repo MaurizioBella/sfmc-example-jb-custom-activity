@@ -225,6 +225,7 @@ const requestedInteraction = {
                     ],
                     "outArguments": [],
                     "url": "https://sfmc-example-custom-activity.herokuapp.com/modules/discount-code/execute",
+                    "useJwt": true,
                     "timeout": 10000,
                     "retryCount": 3,
                     "retryDelay": 0

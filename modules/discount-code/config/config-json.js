@@ -28,6 +28,7 @@ module.exports = function configJSON(req) {
         url: `https://${req.headers.host}/modules/discount-code/execute`,
         // Encode with Customer Key
         useJwt: true,
+        customerKey: process.env.SALT_CUSTOMERKEY,
         // The amount of time we want Journey Builder to wait before cancel the request. Default is 60000, Minimal is 1000
         timeout: 10000,
         // how many retrys if the request failed with 5xx error or network error. default is 0
@@ -40,7 +41,8 @@ module.exports = function configJSON(req) {
     },
     configurationArguments: {
       publish: {
-        url: `https://${req.headers.host}/modules/discount-code/publish`
+        url: `https://${req.headers.host}/modules/discount-code/publish`,
+        useJwt: true
       },
       validate: {
         url: `https://${req.headers.host}/modules/discount-code/validate`

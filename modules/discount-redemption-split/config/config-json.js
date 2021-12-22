@@ -34,7 +34,8 @@ module.exports = function configJSON(req) {
         url: `https://${req.headers.host}/modules/discount-redemption-split/save`
       },
       publish: {
-        url: `https://${req.headers.host}/modules/discount-redemption-split/publish`
+        url: `https://${req.headers.host}/modules/discount-redemption-split/publish`,
+        useJwt: true
       },
       validate: {
         url: `https://${req.headers.host}/modules/discount-redemption-split/validate`

@@ -23,6 +23,7 @@ module.exports = function configJSON(req) {
         }],
         outArguments: [],
         // Fill in the host with the host that this is running on.
+        useJwt: true,
         // It must run under HTTPS
         url: `https://${req.headers.host}/modules/discount-redemption-split/execute`
       }
